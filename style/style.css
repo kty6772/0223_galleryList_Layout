@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/*reset 영역*/
+*{
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{text-decoration: none;}
+a:link{     color: #333;   }
+a:visited{     color: #333;   }
+a:hover{     color: #333;   }
+a:active{     color: #333;   }
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*reset 영역 끝*/
+
+/*Gulideline 시작*/
+/*div#wrap{border: 1px solid #000;}*/
+/*nav#gnb{border: 1px solid #000;}*/
+/*div#left{border: 1px solid #000;}*/
+/*div#galleryList{border: 1px solid #000;}*/
+/*Gulideline 끝*/
+
+
+
+/*div#wrap 시작 */
+div#wrap{
+    width: 1060px;
+    margin: 0 auto;
+}
+/*div#wrap 끝 */
+
+
+
+/*header#header 시작*/
+header#header{
+    text-align: center;
+}
+
+#header h1{
+        height: 100px;
+    line-height: 100px;
+
+}
+
+nav#gnb{
+    width: 690px;
+    margin: 16px auto;
+}
+
+nav#gnb>#mainMenu>li{
+    float: left;
+}
+
+nav#gnb>#mainMenu::after{
+    content: "";
+    display: inline-block;
+}
+
+nav#gnb>#mainMenu>li:not(:last-child)::after{
+    content: "|";
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+
+    position: relative;
+    top: -2px;
+}
+
+nav#gnb>#mainMenu>li a{
+    font-size: 12px;
+}
+
+nav#gnb>#mainMenu>li.selected{
+    font-weight: bold;
+}
+
+/*header#header 끝*/
+
+
+/*main#main 시작 */
+main#main{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+/*div#left 시작 */
+div#left{
+    width: 390px;
+}
+/*div#left 끝 */
+
+
+/*div#galleryList 시작*/
+
+#main #galleryList{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 630px;
+}
+
+#galleryList div.galleryArticle{
+
+    width: 200px;
+    text-align: center;
+}
+
+#galleryList div.galleryArticle span.leadTxt{
+    font-weight: bold;
+    font-size: 14px;
+    color: #a07a56;
+}
+
+#galleryList div.galleryArticle span.goodsname{
+    font-size: 12px;
+/*    font-weight: bold;*/
+}
+
+#galleryList div.galleryArticle span.price{
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #208a88;
+}
+
+#galleryList div.galleryArticle span.price::after{
+    content: " 원";
+    font-size: 16px;
+    color: #208a88;
+}
+
+
+/*div#galleryList 끝*/
+
+
+/*main#main 끝 */
+
+
+
+
+
+
+
+
+
+
+
+
